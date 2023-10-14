@@ -5,7 +5,7 @@
 A aplicação fornece um método para garantir a segurança das credenciais dos usuários por meio de criptografia
 da senha, e armazenando todos os dados no banco de dados PostgreSQL, com a ajuda do Spring Data JPA e 
 Spring Security.
-
+</justify>
 
 ## Conteúdo
 
@@ -57,4 +57,3 @@ Se você tiver alguma dúvida, comentário ou feedback, sinta-se à vontade para
 - **LinkedIn:** [alisson-melo95](https://www.linkedin.com/in/alisson-melo95/) 
 - **Site Pessoal:** [Portifólio](https://alissondev.tech)
 - **GitHub:** [@Daviddust95](https://github.com/Daviddust95)
-</justify>
