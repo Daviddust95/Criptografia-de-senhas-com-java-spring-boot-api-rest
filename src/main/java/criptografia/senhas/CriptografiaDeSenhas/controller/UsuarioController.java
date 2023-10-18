@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/usuario")
+@RequestMapping("/api/usuario")
 public class UsuarioController {
-    private UserRepository repository;
+    private final UserRepository repository;
 
     public UsuarioController(UserRepository repository) {
         this.repository = repository;
     }
 
-    @GetMapping("listarTodos")
+    @GetMapping("/listarTodos")
     public ResponseEntity<List<Modelo>> listarTodos() {
         return ResponseEntity.ok(repository.findAll());
     }
