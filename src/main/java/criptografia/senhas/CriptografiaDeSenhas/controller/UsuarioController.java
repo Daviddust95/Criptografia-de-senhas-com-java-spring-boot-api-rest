@@ -3,6 +3,7 @@ package criptografia.senhas.CriptografiaDeSenhas.controller;
 import criptografia.senhas.CriptografiaDeSenhas.UsuarioModelo.Modelo;
 import criptografia.senhas.CriptografiaDeSenhas.repository.UserRepository;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -11,9 +12,11 @@ import java.util.List;
 @RequestMapping("/api/usuario")
 public class UsuarioController {
     private final UserRepository repository;
+    private final PasswordEncoder encoder;
 
-    public UsuarioController(UserRepository repository) {
+    public UsuarioController(UserRepository repository, PasswordEncoder encoder) {
         this.repository = repository;
+        this.encoder = encoder;
     }
 
     @GetMapping("/listarTodos")
@@ -25,6 +28,7 @@ public class UsuarioController {
     @PostMapping("/salvar")
     public ResponseEntity<Modelo> salvar(@RequestBody Modelo usuario) {
         Modelo savedUsuario = repository.save(usuario);
+        usuario.setPassword(encoder.encode(usuario.getPassword()));
         return ResponseEntity.ok(savedUsuario);
     }
 }
