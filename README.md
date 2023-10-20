@@ -27,6 +27,7 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
 - PostgreSQL
 - Spring Data JPA
 - Spring Security
+- Postman
 
 ## Requisitos
 
