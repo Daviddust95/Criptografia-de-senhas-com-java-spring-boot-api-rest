@@ -34,6 +34,7 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
    - Java
    - PostgreSQL
    - Spring Boot
+   - Postman
 
 ## Instalação
 
