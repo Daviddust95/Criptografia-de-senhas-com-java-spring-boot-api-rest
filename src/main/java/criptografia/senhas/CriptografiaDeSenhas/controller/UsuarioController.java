@@ -40,7 +40,7 @@ public class UsuarioController {
     if (optUsuario.isEmpty()) {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(false);
     }
-    
+
 
     Modelo usuario = optUsuario.get();
     boolean valid = encoder.matches(password, usuario.getPassword());
