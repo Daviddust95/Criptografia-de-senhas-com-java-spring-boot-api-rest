@@ -47,7 +47,7 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
  
 1. **Instalar todas as bibliotecas internas dentro do projeto (caso use o IntelliJ é possível fazer isso apenas selecionando o Maven > Reload Maven Project)**
 
-2. Inicialiar o PostgreSQL e a ferramenta Postman.
+2. Inicializar o PostgreSQL e a ferramenta Postman.
 
 3. Inicializar a aplicação java utilizando o método main.
 
@@ -57,7 +57,7 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
 
 6. Em cada solciitação no Postman, deverá ser utilizado arquivos do tipo raw e json.
 
-7. Como o programa roda na porta 8080 usaremos a seguinte URL para acessar a rota do mesmo: http://localhost:8080/api/usuario/validarSenha + usuario + senha
+7. Como o programa roda na porta 8080 usaremos a seguinte URL para acessar a rota do mesmo http://localhost:8080/api/usuario/validarSenha + usuario + senha
 
 8.  Enviar a solicitação.
 
@@ -69,7 +69,7 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
 
 12.  Após isso, podemos ter certeza que a senha do usuário foi de fato criptograda pela aplicação.
 
-13.  Se retornarmos ao Postman e realizar uma nova solicitação get na url: http://localhost:8080/api/usuario/listarTodos, a resposta retornará a senha do usuário de fato criptografada.
+13.  Se retornarmos ao Postman e realizar uma nova solicitação get na url http://localhost:8080/api/usuario/listarTodos, a resposta retornará a senha do usuário de fato criptografada.
 
 ## Contato
 Se você tiver alguma dúvida, comentário ou feedback, sinta-se à vontade para entrar em contato:
