@@ -43,13 +43,34 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
    
    git clone https://github.com/Daviddust95/Criptografia-de-senhas-com-java-spring-boot-api-rest.git
 
-2. **Configure as propriedades do banco de dados no arquivo application.properties ou application.yml**
-
  ## Como Usar
  
-1. **Após todas as instalaões, basta executar o aplicativo digitando o comando no seu terminal, powershell ou prompt de comando:**
-    ```bash
-    ./mvnw spring-boot:run
+1. **Instalar todas as bibliotecas internas dentro do projeto (caso use o IntelliJ é possível fazer isso apenas selecionando o Maven > Reload Maven Project)**
+
+2. Inicialiar o PostgreSQL e a ferramenta Postman.
+
+3. Inicializar a aplicação java utilizando o método main.
+
+4. Criar usuários dentro do PostgreSQL para testar a aplicação.
+
+5. Vamos usar o postman para criar solicitações do tipo get e, adicionar parâmetros do tipo login e password.
+
+6. Em cada solciitação no Postman, deverá ser utilizado arquivos do tipo raw e json.
+
+7. Como o programa roda na porta 8080 usaremos a seguinte URL para acessar a rota do mesmo: http://localhost:8080/api/usuario/validarSenha + usuario + senha
+
+8.  Enviar a solicitação.
+
+9.  Após a solicitação ser enviada, o programa irá parar, então, clicamos no campo login, e apertamos a tecla f8 para seguir para o próximo campo.
+
+10.  Após isso, clicamos no campo login, e a senha do usuário deverá aparecer encriptada com o padrão hash, não esqueça de copiar a chave criptografada.
+
+11.  Voltamos ao banco de dados, em tools > query tools e executamos a query: select from usuario.
+
+12.  Após isso, podemos ter certeza que a senha do usuário foi de fato criptograda pela aplicação.
+
+13.  Se retornarmos ao Postman e realizar uma nova solicitação get na url: http://localhost:8080/api/usuario/listarTodos, a resposta retornará a senha do usuário de fato criptografada.
+
 ## Contato
 Se você tiver alguma dúvida, comentário ou feedback, sinta-se à vontade para entrar em contato:
 
