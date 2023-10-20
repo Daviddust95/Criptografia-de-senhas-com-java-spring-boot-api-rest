@@ -53,9 +53,9 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
 
 4. Criar usuários dentro do PostgreSQL para testar a aplicação.
 
-5. Vamos usar o postman para criar solicitações do tipo get e, adicionar parâmetros do tipo login e password.
+5. Vamos usar o Postman para criar solicitações do tipo get e, adicionar parâmetros do tipo login e password.
 
-6. Em cada solciitação no Postman, deverá ser utilizado arquivos do tipo raw e json.
+6. Em cada solicitação no Postman, deverá ser utilizado arquivos do tipo raw e json.
 
 7. Como o programa roda na porta 8080 usaremos a seguinte URL para acessar a rota do mesmo http://localhost:8080/api/usuario/validarSenha + usuario + senha
 
