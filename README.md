@@ -23,18 +23,18 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
 
 ## Tecnologias Utilizadas
 
-- Java
-- PostgreSQL
-- Spring Data JPA
-- Spring Security
-- Postman
+- JAVA
+- POSTGRESQL
+- SPRING DATA JPA
+- SPRING SECURITY
+- POSTMAN
 
 ## Requisitos
 
-   - Java
-   - PostgreSQL
-   - Spring Boot
-   - Postman
+   - JAVA
+   - POSTGRESQL
+   - SPRING BOOT
+   - POSTMAN
 
 ## Instalação
 
