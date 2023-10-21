@@ -23,7 +23,7 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
 
 ## Tecnologias Utilizadas
 
-- JAVA JDK
+- JAVA
 - POSTGRESQL
 - SPRING DATA JPA
 - SPRING SECURITY
