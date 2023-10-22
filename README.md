@@ -69,7 +69,7 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
 
 12.  Após isso, podemos ter certeza que a senha do usuário foi de fato criptograda pela aplicação.
 
-13.  Se retornarmos ao Postman e realizarmos uma nova solicitação get na url http://localhost:8080/api/usuario/listarTodos, a resposta retornará a senha do usuário de fato criptografada.
+13.  Se retornarmos ao Postman e realizarmos uma nova solicitação get na url http://localhost:8080/api/usuario/listarTodos, a resposta retornará o longin e a senha de todos os usuários, inclusive o usuário que teve de fato a senha encriptada.
 
 ## Contato
 Se você tiver alguma dúvida, comentário ou feedback, sinta-se à vontade para entrar em contato:
