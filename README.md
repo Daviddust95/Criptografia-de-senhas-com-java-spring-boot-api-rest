@@ -1,5 +1,8 @@
 # Criptografia de senhas com java e spring boot | API REST
 
+## Capturas de Tela
+
+![Captura de tela 2023-10-22 165221](https://github.com/Daviddust95/Criptografia-de-senhas-com-java-spring-boot-api-rest/assets/124353154/7284152a-0035-496a-a759-8bcf466478da)
 
 <justify>
 A aplicação fornece um método para garantir a segurança das credenciais dos usuários por meio de criptografia
