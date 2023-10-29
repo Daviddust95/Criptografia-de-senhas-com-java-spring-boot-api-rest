@@ -62,13 +62,16 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
 5. Para criar usuários dentro do banco de dados, vamos enviar solicitações dentro do POSTMAN, na seguinte URL:
 - ```bash
    http://localhost:8080/api/usuario/salvar
-6. Dentro da solicitação do tipo POST, deverá conter as seguintes informações:
+6. Dentro da solicitação do tipo POST, deverá conter as seguintes informações, sempre sendo enviada como arquivos do tipo raw e json:
 - ```bash
   { "id": "",
   "login": "InformeoLoginAqui",
   "password": "InformeaSenhaAqui"
    }
+7. Agora, nessa etapa, vamos validar ou não a autenticação dos logins e usuários, baseando-se se a informação enviada está correta ou não.
+
 8. Vamos usar o POSTMAN para criar solicitações do tipo get, e vamos adicionar parâmetros do tipo login e password.
+![Captura de tela 2023-10-28 234523](https://github.com/Daviddust95/Criptografia-de-senhas-com-java-spring-boot-api-rest/assets/124353154/18f4a2f0-9d72-47f0-aa60-6ababd020f8a)
 
 9. Em cada solicitação no POSTMAN, deverá ser utilizado arquivos do tipo raw e json.
 
