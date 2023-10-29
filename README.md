@@ -53,43 +53,43 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
  
 1. **Instalar todas as bibliotecas internas dentro do projeto (caso use o IntelliJ é possível fazer isso apenas selecionando o Maven > Reload all Maven Project)**
 
-2. Inicializar o PostgreSQL e a ferramenta POSTMAN.
+2. **Inicializar o PostgreSQL e a ferramenta POSTMAN.**
 
-3. Inicializar o controller da aplicação em modo run (não em modo debug).
+3. **Inicializar o controller da aplicação em modo run (não em modo debug).**
 
-4. Criar um break point na seguinte linha do controller : usuario.setPassword(encoder.encode(usuario.getPassword()));
-
-5. Para criar usuários dentro do banco de dados, vamos enviar solicitações dentro do POSTMAN, na seguinte URL:
+4. **Para criar usuários dentro do banco de dados, vamos enviar solicitações dentro do POSTMAN, na seguinte URL:**
 - ```bash
    http://localhost:8080/api/usuario/salvar
-6. Dentro da solicitação do tipo POST, deverá conter as seguintes caracteristicas, do tipo raw e json:
+6. **Dentro da solicitação do tipo POST, deverá conter as seguintes caracteristicas, do tipo raw e json:**
 ![Captura de tela 2023-10-28 234953](https://github.com/Daviddust95/Criptografia-de-senhas-com-java-spring-boot-api-rest/assets/124353154/620f8359-5a3e-4bb8-928b-660346c8b5e0)
 - ```bash
   { "id": "",
   "login": "InformeoLoginAqui",
   "password": "InformeaSenhaAqui"
    }
-7. Nesta etapa, vamos verificar se as credenciais enviadas pelo usuário são válidas. Para isso, vamos comparar as informações fornecidas com os dados registrados em nossa base de dados. Se as informações forem correspondentes, a autenticação será bem-sucedida. Caso contrário, o login será negado.
+7. **Nesta etapa, vamos verificar se as credenciais enviadas pelo usuário são válidas. Para isso, vamos comparar as informações fornecidas com os dados registrados em nossa base de dados. Se as informações forem correspondentes, a autenticação será bem-sucedida. Caso contrário, o login será negado.**
 
-8. Vamos usar o POSTMAN para criar solicitações do tipo get, e vamos adicionar parâmetros do tipo login e password.
+8. **Vamos usar o POSTMAN para criar solicitações do tipo get, e vamos adicionar parâmetros do tipo login e password.**
 ![Captura de tela 2023-10-28 234523](https://github.com/Daviddust95/Criptografia-de-senhas-com-java-spring-boot-api-rest/assets/124353154/18f4a2f0-9d72-47f0-aa60-6ababd020f8a)
 
-9. Em cada solicitação no POSTMAN, deverá ser utilizado arquivos do tipo raw e json.
+9. **Em cada solicitação no POSTMAN, deverá ser utilizado arquivos do tipo raw e json.**
 
-10. Como o programa roda na porta 8080 usaremos a seguinte URL para acessar a rota no POSTMAN:
+10. **Como o programa roda na porta 8080 usaremos a seguinte URL para acessar a rota no POSTMAN:**
 - ```bash
       http://localhost:8080/api/usuario/validarSenha + usuario + senha
-12.  Vamos usar como exemplo o login postgres e senha postgres.
+12.  **Vamos usar como exemplo o login postgres e senha postgres.**
 ![Captura de tela 2023-10-29 000409](https://github.com/Daviddust95/Criptografia-de-senhas-com-java-spring-boot-api-rest/assets/124353154/a6f7dc2c-3b1a-4911-aa6e-3712b2ee5e06)
 
-13.  Enviar a solicitação.
+13. **Enviar a solicitação.**
 
-14. Após a solicitação ser enviada, receberemos uma resposta do login. A resposta será "True" se as credenciais estiverem corretas, ou "False" se as credenciais estiverem inválidas.
+14. **Após a solicitação ser enviada, receberemos uma resposta do login. A resposta será "True" se as credenciais estiverem corretas, ou "False" se as credenciais estiverem inválidas.**
 ![Captura de tela 2023-10-29 000658](https://github.com/Daviddust95/Criptografia-de-senhas-com-java-spring-boot-api-rest/assets/124353154/2b0adbec-26bb-4d66-8c37-a52e35c47173)
 
-15.  Se retornarmos ao POSTMAN e realizarmos uma nova solicitação get na url http://localhost:8080/api/usuario/listarTodos, a resposta retornará o longin e a senha de todos os usuários, inclusive o usuário que teve de fato a senha encriptada.
-
-16. Após isso, podemos ter certeza que a senha do usuário foi de fato criptograda pela aplicação.
+15. **Se retornarmos e realizarmos uma nova solicitação get no POSTMAN na url:**
+- ```bash
+   http://localhost:8080/api/usuario/listarTodos
+16. **A resposta retornará o longin e a senha de todos os usuários, inclusive os usuários que tiveram de fato a senha encriptada.**
+18. **Após isso, podemos ter certeza que a senha do usuário foi de fato criptograda pela aplicação.**
 
 ## Contato
 Se você tiver alguma dúvida, comentário ou feedback, sinta-se à vontade para entrar em contato:
