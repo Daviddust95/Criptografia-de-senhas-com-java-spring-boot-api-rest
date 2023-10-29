@@ -4,6 +4,11 @@
 
 ![Captura de tela 2023-10-22 165221](https://github.com/Daviddust95/Criptografia-de-senhas-com-java-spring-boot-api-rest/assets/124353154/7284152a-0035-496a-a759-8bcf466478da)
 
+
+https://github.com/Daviddust95/Criptografia-de-senhas-com-java-spring-boot-api-rest/assets/124353154/a4255843-5984-45a5-b1fa-956e1c8d0604
+
+https://github.com/Daviddust95/Criptografia-de-senhas-com-java-spring-boot-api-rest/assets/124353154/8bf38329-c847-40a3-8a16-6888c447d180
+
 <justify>
 A aplicação fornece um método para garantir a segurança das credenciais dos usuários por meio de criptografia
 da senha, e armazenando todos os dados no banco de dados PostgreSQL, com a ajuda do Spring Data JPA e 
