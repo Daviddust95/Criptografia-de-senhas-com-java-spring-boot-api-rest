@@ -48,7 +48,7 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
 
  ## Como Usar
  
-1. **Instalar todas as bibliotecas internas dentro do projeto (caso use o IntelliJ é possível fazer isso apenas selecionando o Maven > Reload Maven Project)**
+1. **Instalar todas as bibliotecas internas dentro do projeto (caso use o IntelliJ é possível fazer isso apenas selecionando o Maven > Reload all Maven Project)**
 
 2. Inicializar o PostgreSQL e a ferramenta Postman.
 
