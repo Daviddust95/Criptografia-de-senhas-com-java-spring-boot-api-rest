@@ -52,27 +52,29 @@ Este é um projeto Java que fornece uma solução para garantir a segurança das
 
 2. Inicializar o PostgreSQL e a ferramenta Postman.
 
-3. Inicializar a aplicação java utilizando o método main.
+3. Inicializar o controller da aplicação em modo run (não em modo debug).
 
-4. Criar usuários dentro do PostgreSQL para testar a aplicação.
+4. Criar um break point na seguinte linha do controller : usuario.setPassword(encoder.encode(usuario.getPassword()));
 
-5. Vamos usar o Postman para criar solicitações do tipo get e, adicionar parâmetros do tipo login e password.
+5. Criar usuários dentro do PostgreSQL para testar a aplicação.
 
-6. Em cada solicitação no Postman, deverá ser utilizado arquivos do tipo raw e json.
+6. Vamos usar o Postman para criar solicitações do tipo get, e vamos adicionar parâmetros do tipo login e password.
 
-7. Como o programa roda na porta 8080 usaremos a seguinte URL para acessar a rota do mesmo http://localhost:8080/api/usuario/validarSenha + usuario + senha
+7. Em cada solicitação no Postman, deverá ser utilizado arquivos do tipo raw e json.
 
-8.  Enviar a solicitação.
+8. Como o programa roda na porta 8080 usaremos a seguinte URL para acessar a rota do mesmo http://localhost:8080/api/usuario/validarSenha + usuario + senha
 
-9.  Após a solicitação ser enviada, o programa irá parar, então, clicamos no campo login, e apertamos a tecla f8 para seguir para o próximo campo.
+9.  Enviar a solicitação.
 
-10.  Após isso, clicamos no campo login, e a senha do usuário deverá aparecer encriptada com o padrão hash, não esqueça de copiar a chave criptografada.
+10.  Após a solicitação ser enviada, o programa irá parar, então, clicamos no campo login, e apertamos a tecla f8 para seguir para o próximo campo.
 
-11.  Voltamos ao banco de dados, em tools > query tools e executamos a query: select from usuario.
+11.  Após isso, clicamos no campo login, e a senha do usuário deverá aparecer encriptada com o padrão hash, não esqueça de copiar a chave criptografada.
 
-12.  Após isso, podemos ter certeza que a senha do usuário foi de fato criptograda pela aplicação.
+12.  Voltamos ao banco de dados, em tools > query tools e executamos a query: select from usuario.
 
-13.  Se retornarmos ao Postman e realizarmos uma nova solicitação get na url http://localhost:8080/api/usuario/listarTodos, a resposta retornará o longin e a senha de todos os usuários, inclusive o usuário que teve de fato a senha encriptada.
+13.  Após isso, podemos ter certeza que a senha do usuário foi de fato criptograda pela aplicação.
+
+14.  Se retornarmos ao Postman e realizarmos uma nova solicitação get na url http://localhost:8080/api/usuario/listarTodos, a resposta retornará o longin e a senha de todos os usuários, inclusive o usuário que teve de fato a senha encriptada.
 
 ## Contato
 Se você tiver alguma dúvida, comentário ou feedback, sinta-se à vontade para entrar em contato:
