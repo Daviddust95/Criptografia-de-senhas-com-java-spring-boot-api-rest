@@ -26,7 +26,7 @@ Spring Security.
 
 ## Sobre
 <justify>
-Este é um projeto Java que fornece uma solução para garantir a segurança das credenciais dos usuários por meio da criptografia de senhas e armazenamento dos dados no banco de dados PostgreSQL.
+Este projeto Java fornece uma solução para garantir a segurança das credenciais dos usuários, criptografando as senhas com uma função hash e armazenando os dados no banco de dados PostgreSQL.
 <justify>
 
 ## Tecnologias Utilizadas
