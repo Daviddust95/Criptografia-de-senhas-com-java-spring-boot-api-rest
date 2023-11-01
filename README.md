@@ -89,7 +89,7 @@ Este projeto Java fornece uma solução para garantir a segurança das credencia
 - ```bash
    http://localhost:8080/api/usuario/listarTodos
 16. **A resposta retornará o longin e a senha de todos os usuários, inclusive os usuários que tiveram de fato a senha encriptada.**
-18. **Após isso, podemos ter certeza que a senha do usuário foi de fato criptograda pela aplicação.**
+18. **Após isso, podemos ter certeza que a senha do usuário foi de fato criptografada pela aplicação.**
 
 ## Contato
 Se você tiver alguma dúvida, comentário ou feedback, sinta-se à vontade para entrar em contato:
