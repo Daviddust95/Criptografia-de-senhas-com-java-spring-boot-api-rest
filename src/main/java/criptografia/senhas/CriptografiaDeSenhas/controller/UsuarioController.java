@@ -1,3 +1,9 @@
+
+//Criação do controller para teste do aplicativo
+
+/* Precisamos de controllers para manipular as
+requisições HTTP e direcionar o fluxo da
+aplicação.*/
 package criptografia.senhas.CriptografiaDeSenhas.controller;
 
 import criptografia.senhas.CriptografiaDeSenhas.UsuarioModelo.Modelo;
@@ -9,10 +15,15 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+//Dentro do controller  temos as nossas API's rests
 
+//Fornecemos um caminho padrão para esse controller
 @RestController
 @RequestMapping("/api/usuario")
 public class UsuarioController {
+
+//Inserção de dependências
+
     private final UserRepository repository;
     private final PasswordEncoder encoder;
 
@@ -20,7 +31,7 @@ public class UsuarioController {
         this.repository = repository;
         this.encoder = encoder;
     }
-
+    //Método padrão de API REST
     @GetMapping("/listarTodos")
     public ResponseEntity<List<Modelo>> listarTodos() {
         List<Modelo> usuarios = repository.findAll();
