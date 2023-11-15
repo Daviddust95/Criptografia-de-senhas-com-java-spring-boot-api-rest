@@ -25,6 +25,7 @@ public class UsuarioController {
 //Inserção de dependências
 
     private final UserRepository repository;
+    //Criptografa a senha antes de envia-la para o banco de dados
     private final PasswordEncoder encoder;
 
     public UsuarioController(UserRepository repository, PasswordEncoder encoder) {
@@ -34,6 +35,8 @@ public class UsuarioController {
     //Método padrão de API REST
     @GetMapping("/listarTodos")
     public ResponseEntity<List<Modelo>> listarTodos() {
+        /* Capta a instância recebida do
+        usuário para criptgrafar a senha */
         List<Modelo> usuarios = repository.findAll();
         return ResponseEntity.ok(usuarios);
     }
@@ -47,8 +50,10 @@ public class UsuarioController {
         usuario.setPassword(encoder.encode(usuario.getPassword()));
         return ResponseEntity.ok(repository.save(usuario));
     }
+    // Verificar o usuário
+    // Verificar se a senha é válida
     @GetMapping("/validarSenha")
-    public ResponseEntity<Boolean> validarSenha(@RequestParam String login,
+    public ResponseEntity<Boolean> validarSenha(@RequestParam String login, //
                                                 @RequestParam String password) {
 
     Optional<Modelo> optUsuario = repository.findByLogin(login);
@@ -56,10 +61,12 @@ public class UsuarioController {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(false);
     }
 
-
+    /* Verificar se a senha informada
+    igual a do banco de dados */
     Modelo usuario = optUsuario.get();
+    // Se o usuário ou senha forem válidos
     boolean valid = encoder.matches(password, usuario.getPassword());
-
+    // Se o usuário ou senha forem inválidos
     HttpStatus status = (valid) ? HttpStatus.OK : HttpStatus.UNAUTHORIZED;
         return ResponseEntity.status(status).body(valid);
 
