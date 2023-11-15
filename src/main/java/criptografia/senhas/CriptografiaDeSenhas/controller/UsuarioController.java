@@ -39,6 +39,10 @@ public class UsuarioController {
     }
 
     @PostMapping("/salvar")
+    /* Será introduzido um arquivo JSON
+    de entrada e o mesmo será convertido
+    como objeto.
+    */
     public ResponseEntity<Modelo> salvar(@RequestBody Modelo usuario) {
         usuario.setPassword(encoder.encode(usuario.getPassword()));
         return ResponseEntity.ok(repository.save(usuario));
