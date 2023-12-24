@@ -1,7 +1,7 @@
 ![Badge de Estado](https://img.shields.io/badge/Status-Em%20Melhoria-brightgreen)
 
 # Criptografia de senhas com java e spring boot | API REST
-### **Este projeto está sempre em um processo contínuo de melhoria para oferecer a melhor experiência possível.**
+### **Este projeto está sempre em um processo contínuo de melhoria, para oferecer a melhor experiência possível.**
 
 ## Últimas Melhorias - 24/12/2023
 
