@@ -7,7 +7,7 @@
 
 - Atualização na versão das dependências e dos parents do arquivo pom.xml
 - Preparação do pom.xml pra inserção da interface gráfica (GUI).
-
+---
 <justify>
 A aplicação fornece um método para garantir a segurança das credenciais dos usuários por meio de criptografia
 da senha, e armazenando todos os dados no banco de dados PostgreSQL, com a ajuda do Spring Data JPA e 
