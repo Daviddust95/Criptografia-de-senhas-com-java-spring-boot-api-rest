@@ -5,7 +5,7 @@
 
 ## Últimas Melhorias - 24/12/2023
 
-- Atualização na versão das dependências e dos parents do arquivo pom.xml
+- Atualização na versão das dependências e dos parents do arquivo pom.xml.
 - Preparação do pom.xml pra inserção da interface gráfica (GUI).
 ---
 <justify>
