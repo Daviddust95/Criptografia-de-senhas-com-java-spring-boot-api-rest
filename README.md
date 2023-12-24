@@ -1,12 +1,12 @@
-# Criptografia de senhas com java e spring boot | API REST
-Este projeto está sempre em um processo contínuo de melhoria para oferecer a melhor experiência possível.
-
 ![Badge de Estado](https://img.shields.io/badge/Status-Em%20Melhoria-brightgreen)
 
-## Últimas Melhorias
+# Criptografia de senhas com java e spring boot | API REST
+### **Este projeto está sempre em um processo contínuo de melhoria para oferecer a melhor experiência possível.**
 
-- Atualização na versão das dependências e dos parents do arquivo POM.XML
-- Preparação do POM.XML pra inserção da interface gráfica (GUI).
+## Últimas Melhorias - 24/12/2023
+
+- Atualização na versão das dependências e dos parents do arquivo pom.xml
+- Preparação do pom.xml pra inserção da interface gráfica (GUI).
 
 <justify>
 A aplicação fornece um método para garantir a segurança das credenciais dos usuários por meio de criptografia
