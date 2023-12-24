@@ -5,8 +5,9 @@
 
 ## Últimas Melhorias - 24/12/2023
 
-- Atualização na versão das dependências e dos parents do arquivo pom.xml.
-- Preparação do pom.xml pra inserção da interface gráfica (GUI).
+- Atualização na versão das dependências e dos parents do arquivo pom.xml. (✅)
+- Preparação do pom.xml pra inserção da interface gráfica (GUI). (✅)
+- Implementação da interface gráfica. (coming soon ⌛)
 ---
 <justify>
 A aplicação fornece um método para garantir a segurança das credenciais dos usuários por meio de criptografia
