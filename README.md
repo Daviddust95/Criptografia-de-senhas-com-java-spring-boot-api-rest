@@ -1,4 +1,12 @@
 # Criptografia de senhas com java e spring boot | API REST
+Este projeto está sempre em um processo contínuo de melhoria para oferecer a melhor experiência possível.
+
+![Badge de Estado](https://img.shields.io/badge/Status-Em%20Melhoria-brightgreen)
+
+## Últimas Melhorias
+
+- Atualização na versão das dependências e dos parents do arquivo POM.XML
+- Preparação do POM.XML pra inserção da interface gráfica (GUI).
 
 <justify>
 A aplicação fornece um método para garantir a segurança das credenciais dos usuários por meio de criptografia
@@ -6,7 +14,7 @@ da senha, e armazenando todos os dados no banco de dados PostgreSQL, com a ajuda
 Spring Security.
 </justify>
 
-## Capturas de Tela
+## Imagem do Projeto
 
 ![Captura de tela 2023-10-22 165221](https://github.com/Daviddust95/Criptografia-de-senhas-com-java-spring-boot-api-rest/assets/124353154/7284152a-0035-496a-a759-8bcf466478da)
 
